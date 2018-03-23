@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+	<route method="GET" url="/V1/tenovia-productapi/productattribute/:param">
+		<service class="Tenovia\Productapi\Api\ProductAttributeManagementInterface" method="getProductAttribute"/>
+		<resources>
+			<resource ref="anonymous"/>
+		</resources>
+	</route>
+	<route method="POST" url="/V1/tenovia-productapi/updateprice">
+		<service class="Tenovia\Productapi\Api\ProductAttributeManagementInterface" method="updatePrice"/>
+		<resources>
+			<resource ref="anonymous"/>
+		</resources>
+	</route>
+	<route method="POST" url="/V1/tenovia-productapi/update-batch-code">
+		<service class="Tenovia\Productapi\Api\ProductAttributeManagementInterface" method="updateBatchCode"/>
+		<resources>
+			<resource ref="anonymous"/>
+		</resources>
+	</route>
+	<route method="POST" url="/V1/tenovia-productapi/update-expiry-date">
+		<service class="Tenovia\Productapi\Api\ProductAttributeManagementInterface" method="updateExpiryDate"/>
+		<resources>
+			<resource ref="anonymous"/>
+		</resources>
+	</route>
+	<route method="POST" url="/V1/tenovia-productapi/update-qty">
+		<service class="Tenovia\Productapi\Api\ProductAttributeManagementInterface" method="updateQty"/>
+		<resources>
+			<resource ref="anonymous"/>
+		</resources>
+	</route>
+</routes>

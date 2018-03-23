@@ -1,0 +1,21 @@
+{
+    "name": "tenovia/module-productapi",
+    "description": "Product attribute Update API",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "xxx@xxx.xx",
+            "name": "Shebin Sheikh"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Tenovia\\Productapi\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}
